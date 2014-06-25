@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="LTViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U4U-Wg-r3y"/>
+                        <viewControllerLayoutGuide type="bottom" id="mUd-yH-fEU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Light One:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtY-SE-SJT">
+                                <rect key="frame" x="20" y="106" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Light Two:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ5-34-EAl">
+                                <rect key="frame" x="20" y="145" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Light Three:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2J-kE-05U">
+                                <rect key="frame" x="20" y="184" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="18R-cE-ZGY">
+                                <rect key="frame" x="158" y="96" width="51" height="31"/>
+                                <connections>
+                                    <action selector="lightOneChanged:" destination="2" eventType="valueChanged" id="ncQ-ad-nBk"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ac1-nB-3ug">
+                                <rect key="frame" x="158" y="135" width="51" height="31"/>
+                                <connections>
+                                    <action selector="lightTwoChanged:" destination="2" eventType="valueChanged" id="FpP-BL-EbW"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tpa-u7-TXy">
+                                <rect key="frame" x="158" y="174" width="51" height="31"/>
+                                <connections>
+                                    <action selector="lightThreeChanged:" destination="2" eventType="valueChanged" id="iVl-er-YRt"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tpa-u7-TXy" firstAttribute="bottom" secondItem="T2J-kE-05U" secondAttribute="bottom" id="7sU-GD-Oo5"/>
+                            <constraint firstItem="18R-cE-ZGY" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="158" id="9Xf-FO-Rw1"/>
+                            <constraint firstItem="T2J-kE-05U" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="N6R-4h-GNW"/>
+                            <constraint firstItem="rtY-SE-SJT" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="Pc4-rO-U2w"/>
+                            <constraint firstItem="ac1-nB-3ug" firstAttribute="bottom" secondItem="fZ5-34-EAl" secondAttribute="bottom" id="Y0c-Ap-7PV"/>
+                            <constraint firstItem="Tpa-u7-TXy" firstAttribute="top" secondItem="ac1-nB-3ug" secondAttribute="bottom" constant="8" symbolic="YES" id="ZDZ-Bw-8C7"/>
+                            <constraint firstItem="18R-cE-ZGY" firstAttribute="bottom" secondItem="rtY-SE-SJT" secondAttribute="bottom" id="Zkh-cJ-AMI"/>
+                            <constraint firstItem="ac1-nB-3ug" firstAttribute="leading" secondItem="18R-cE-ZGY" secondAttribute="leading" id="hCv-dw-hGv"/>
+                            <constraint firstItem="18R-cE-ZGY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="96" id="nac-am-3GX"/>
+                            <constraint firstItem="fZ5-34-EAl" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="sqW-VI-w54"/>
+                            <constraint firstItem="Tpa-u7-TXy" firstAttribute="leading" secondItem="ac1-nB-3ug" secondAttribute="leading" id="wOY-ng-UvN"/>
+                            <constraint firstItem="ac1-nB-3ug" firstAttribute="top" secondItem="18R-cE-ZGY" secondAttribute="bottom" constant="8" symbolic="YES" id="yhe-g4-SAh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
