@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0BBF950E17880785009E0AD0"
-               BuildableName = "ArduinoControl.app"
+               BuildableName = "RedBearBLE.app"
                BlueprintName = "RedBearBLE"
                ReferencedContainer = "container:RedBearBLE.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BBF950E17880785009E0AD0"
-            BuildableName = "ArduinoControl.app"
+            BuildableName = "RedBearBLE.app"
             BlueprintName = "RedBearBLE"
             ReferencedContainer = "container:RedBearBLE.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BBF950E17880785009E0AD0"
-            BuildableName = "ArduinoControl.app"
+            BuildableName = "RedBearBLE.app"
             BlueprintName = "RedBearBLE"
             ReferencedContainer = "container:RedBearBLE.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BBF950E17880785009E0AD0"
-            BuildableName = "ArduinoControl.app"
+            BuildableName = "RedBearBLE.app"
             BlueprintName = "RedBearBLE"
             ReferencedContainer = "container:RedBearBLE.xcodeproj">
          </BuildableReference>
