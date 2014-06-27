@@ -10,8 +10,9 @@
 
 @interface LTViewController : UIViewController
 
-- (IBAction) lightOneChanged:(id)sender; 
-- (IBAction) lightTwoChanged:(id)sender;
-- (IBAction) lightThreeChanged:(id)sender;
+- (IBAction) sendBtn:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UITextField *textArea;
+
 
 @end

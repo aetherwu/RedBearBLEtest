@@ -16,6 +16,35 @@
 @end
 
 @implementation LTViewController
+@synthesize textArea;
+
+/*------------
+ 
+ Actions
+ 
+ -------------*/
+- (IBAction) sendBtn:(UIButton *)sender {
+    //break down the sentence to char
+    //send each char with devider
+    for (NSInteger charIdx=0; charIdx<textArea.text.length; charIdx++) {
+        // Do something with character at index charIdx, for example:
+        NSLog(@"%C", [textArea.text characterAtIndex:charIdx]);
+        NSData* data = [[NSString stringWithFormat:@"%c$>", [textArea.text characterAtIndex:charIdx]] dataUsingEncoding: NSUTF8StringEncoding];
+        NSLog(@"%@", data);
+        [self.ble write:data];
+    }
+    NSData* data = [[NSString stringWithFormat:@"\n"] dataUsingEncoding: NSUTF8StringEncoding];
+    NSLog(@"%@", data);
+    [self.ble write:data];
+    
+}
+
+
+/*------------
+
+ Initialize
+
+ -------------*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,46 +78,6 @@
     else
         [self performSelector:@selector(tryToConnectToBLEShield) withObject:nil afterDelay:2.0];
 }
-
-- (IBAction) lightOneChanged:(UISwitch *)sender {
-    //Turn on light one
-    UInt8 buf[2] = {0x01, 0x00};
-
-    if (sender.on)
-        buf[1] = 0x01;
-    else
-        buf[1] = 0x00;
-
-    NSData *data = [[NSData alloc] initWithBytes:buf length:2];
-    [self.ble write:data];
-}
-
-- (IBAction) lightTwoChanged:(UISwitch *)sender {
-    //Turn on light one
-    UInt8 buf[2] = {0x02, 0x00};
-
-    if (sender.on)
-        buf[1] = 0x01;
-    else
-        buf[1] = 0x00;
-
-    NSData *data = [[NSData alloc] initWithBytes:buf length:2];
-    [self.ble write:data];
-}
-
-- (IBAction) lightThreeChanged:(UISwitch *)sender {
-    //Turn on light one
-    UInt8 buf[2] = {0x03, 0x00};
-
-    if (sender.on)
-        buf[1] = 0x01;
-    else
-        buf[1] = 0x00;
-
-    NSData *data = [[NSData alloc] initWithBytes:buf length:2];
-    [self.ble write:data];
-}
-
 -(void) bleDidConnect {
     NSLog(@"Did Connect");
 }

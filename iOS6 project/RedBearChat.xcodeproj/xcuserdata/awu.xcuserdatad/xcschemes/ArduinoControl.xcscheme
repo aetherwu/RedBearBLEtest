@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0BBF950E17880785009E0AD0"
-               BuildableName = "RedBearBLE.app"
-               BlueprintName = "RedBearBLE"
-               ReferencedContainer = "container:RedBearBLE.xcodeproj">
+               BuildableName = "RedBearChat.app"
+               BlueprintName = "RedBearChat"
+               ReferencedContainer = "container:RedBearChat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BBF950E17880785009E0AD0"
-            BuildableName = "RedBearBLE.app"
-            BlueprintName = "RedBearBLE"
-            ReferencedContainer = "container:RedBearBLE.xcodeproj">
+            BuildableName = "RedBearChat.app"
+            BlueprintName = "RedBearChat"
+            ReferencedContainer = "container:RedBearChat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BBF950E17880785009E0AD0"
-            BuildableName = "RedBearBLE.app"
-            BlueprintName = "RedBearBLE"
-            ReferencedContainer = "container:RedBearBLE.xcodeproj">
+            BuildableName = "RedBearChat.app"
+            BlueprintName = "RedBearChat"
+            ReferencedContainer = "container:RedBearChat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BBF950E17880785009E0AD0"
-            BuildableName = "RedBearBLE.app"
-            BlueprintName = "RedBearBLE"
-            ReferencedContainer = "container:RedBearBLE.xcodeproj">
+            BuildableName = "RedBearChat.app"
+            BlueprintName = "RedBearChat"
+            ReferencedContainer = "container:RedBearChat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

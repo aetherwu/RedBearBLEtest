@@ -23,11 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BBF950F17880785009E0AD0 /* RedBearBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBearBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBF950F17880785009E0AD0 /* RedBearChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBearChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BBF951217880785009E0AD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0BBF951417880785009E0AD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BBF951617880785009E0AD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0BBF951A17880785009E0AD0 /* RedBearBLE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedBearBLE-Info.plist"; sourceTree = "<group>"; };
+		0BBF951A17880785009E0AD0 /* RedBearChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedBearChat-Info.plist"; sourceTree = "<group>"; };
 		0BBF951C17880785009E0AD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0BBF951E17880785009E0AD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BBF952017880785009E0AD0 /* RedBearBLE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedBearBLE-Prefix.pch"; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				0BBF953A17880C67009E0AD0 /* CoreBluetooth.framework */,
-				0BBF951817880785009E0AD0 /* RedBearBLE */,
+				0BBF951817880785009E0AD0 /* RedBearChat */,
 				0BBF951117880785009E0AD0 /* Frameworks */,
 				0BBF951017880785009E0AD0 /* Products */,
 			);
@@ -73,7 +73,7 @@
 		0BBF951017880785009E0AD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0BBF950F17880785009E0AD0 /* RedBearBLE.app */,
+				0BBF950F17880785009E0AD0 /* RedBearChat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,7 +89,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0BBF951817880785009E0AD0 /* RedBearBLE */ = {
+		0BBF951817880785009E0AD0 /* RedBearChat */ = {
 			isa = PBXGroup;
 			children = (
 				0BBF952117880785009E0AD0 /* LTAppDelegate.h */,
@@ -99,14 +99,14 @@
 				0BBF952E17880785009E0AD0 /* LTViewController.m */,
 				0BBF951917880785009E0AD0 /* Supporting Files */,
 			);
-			name = RedBearBLE;
+			name = RedBearChat;
 			path = ArduinoControl;
 			sourceTree = "<group>";
 		};
 		0BBF951917880785009E0AD0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0BBF951A17880785009E0AD0 /* RedBearBLE-Info.plist */,
+				0BBF951A17880785009E0AD0 /* RedBearChat-Info.plist */,
 				0BBF951B17880785009E0AD0 /* InfoPlist.strings */,
 				0BBF951E17880785009E0AD0 /* main.m */,
 				0BBF952017880785009E0AD0 /* RedBearBLE-Prefix.pch */,
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0BBF950E17880785009E0AD0 /* RedBearBLE */ = {
+		0BBF950E17880785009E0AD0 /* RedBearChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BBF953217880785009E0AD0 /* Build configuration list for PBXNativeTarget "RedBearBLE" */;
+			buildConfigurationList = 0BBF953217880785009E0AD0 /* Build configuration list for PBXNativeTarget "RedBearChat" */;
 			buildPhases = (
 				0BBF950B17880785009E0AD0 /* Sources */,
 				0BBF950C17880785009E0AD0 /* Frameworks */,
@@ -143,9 +143,9 @@
 			);
 			dependencies = (
 			);
-			name = RedBearBLE;
+			name = RedBearChat;
 			productName = ArduinoControl;
-			productReference = 0BBF950F17880785009E0AD0 /* RedBearBLE.app */;
+			productReference = 0BBF950F17880785009E0AD0 /* RedBearChat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +158,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Tupps.com;
 			};
-			buildConfigurationList = 0BBF950A17880785009E0AD0 /* Build configuration list for PBXProject "RedBearBLE" */;
+			buildConfigurationList = 0BBF950A17880785009E0AD0 /* Build configuration list for PBXProject "RedBearChat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -170,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0BBF950E17880785009E0AD0 /* RedBearBLE */,
+				0BBF950E17880785009E0AD0 /* RedBearChat */,
 			);
 		};
 /* End PBXProject section */
@@ -284,9 +284,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ArduinoControl/RedBearBLE-Prefix.pch";
-				INFOPLIST_FILE = "ArduinoControl/RedBearBLE-Info.plist";
-				PRODUCT_NAME = RedBearBLE;
+				GCC_PREFIX_HEADER = "ArduinoControl/RedBearChat-Prefix.pch";
+				INFOPLIST_FILE = "ArduinoControl/RedBearChat-Info.plist";
+				PRODUCT_NAME = RedBearChat;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -295,9 +295,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ArduinoControl/RedBearBLE-Prefix.pch";
-				INFOPLIST_FILE = "ArduinoControl/RedBearBLE-Info.plist";
-				PRODUCT_NAME = RedBearBLE;
+				GCC_PREFIX_HEADER = "ArduinoControl/RedBearChat-Prefix.pch";
+				INFOPLIST_FILE = "ArduinoControl/RedBearChat-Info.plist";
+				PRODUCT_NAME = RedBearChat;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0BBF950A17880785009E0AD0 /* Build configuration list for PBXProject "RedBearBLE" */ = {
+		0BBF950A17880785009E0AD0 /* Build configuration list for PBXProject "RedBearChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0BBF953017880785009E0AD0 /* Debug */,
@@ -314,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BBF953217880785009E0AD0 /* Build configuration list for PBXNativeTarget "RedBearBLE" */ = {
+		0BBF953217880785009E0AD0 /* Build configuration list for PBXNativeTarget "RedBearChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0BBF953317880785009E0AD0 /* Debug */,
