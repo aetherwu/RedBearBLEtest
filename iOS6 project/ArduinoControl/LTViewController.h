@@ -7,12 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLE.h"
 
 @interface LTViewController : UIViewController
-
-- (IBAction) sendBtn:(id)sender;
+{
+    BLE *bleShield;
+    UIActivityIndicatorView *activityIndicator;
+	NSTextStorage *storage;
+}
 
 @property (strong, nonatomic) IBOutlet UITextField *textArea;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UILabel *incomeText;
+@property (strong, nonatomic) IBOutlet UITextView *outPutArea;
+
 
 
 @end

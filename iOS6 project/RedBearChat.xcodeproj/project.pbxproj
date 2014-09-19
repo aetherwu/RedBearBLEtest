@@ -20,6 +20,7 @@
 		0BBF952F17880785009E0AD0 /* LTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF952E17880785009E0AD0 /* LTViewController.m */; };
 		0BBF953917880AA2009E0AD0 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF953717880AA2009E0AD0 /* BLE.m */; };
 		0BBF953B17880C67009E0AD0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBF953A17880C67009E0AD0 /* CoreBluetooth.framework */; };
+		92038807195E585100F49361 /* RBLCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92038806195E585100F49361 /* RBLCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		0BBF953717880AA2009E0AD0 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		0BBF953817880AA2009E0AD0 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		0BBF953A17880C67009E0AD0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		92038805195E585100F49361 /* RBLCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLCellTableViewCell.h; sourceTree = "<group>"; };
+		92038806195E585100F49361 /* RBLCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 		0BBF951817880785009E0AD0 /* RedBearChat */ = {
 			isa = PBXGroup;
 			children = (
+				92038805195E585100F49361 /* RBLCellTableViewCell.h */,
+				92038806195E585100F49361 /* RBLCellTableViewCell.m */,
 				0BBF952117880785009E0AD0 /* LTAppDelegate.h */,
 				0BBF952217880785009E0AD0 /* LTAppDelegate.m */,
 				0BBF952A17880785009E0AD0 /* MainStoryboard.storyboard */,
@@ -157,6 +162,11 @@
 				CLASSPREFIX = LT;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Tupps.com;
+				TargetAttributes = {
+					0BBF950E17880785009E0AD0 = {
+						DevelopmentTeam = 657TPRFMM2;
+					};
+				};
 			};
 			buildConfigurationList = 0BBF950A17880785009E0AD0 /* Build configuration list for PBXProject "RedBearChat" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -198,6 +208,7 @@
 				0BBF951F17880785009E0AD0 /* main.m in Sources */,
 				0BBF952317880785009E0AD0 /* LTAppDelegate.m in Sources */,
 				0BBF952F17880785009E0AD0 /* LTViewController.m in Sources */,
+				92038807195E585100F49361 /* RBLCellTableViewCell.m in Sources */,
 				0BBF953917880AA2009E0AD0 /* BLE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,9 +294,12 @@
 		0BBF953317880785009E0AD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArduinoControl/RedBearChat-Prefix.pch";
 				INFOPLIST_FILE = "ArduinoControl/RedBearChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = RedBearChat;
 				WRAPPER_EXTENSION = app;
 			};
@@ -294,9 +308,12 @@
 		0BBF953417880785009E0AD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArduinoControl/RedBearChat-Prefix.pch";
 				INFOPLIST_FILE = "ArduinoControl/RedBearChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = RedBearChat;
 				WRAPPER_EXTENSION = app;
 			};
